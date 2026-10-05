@@ -1,27 +1,27 @@
-let calcBtnJS = document.getElementById("calcBtnHTML");
+let calcBtn = document.getElementById("calcBtnHTML");
 
-let savedTotalJS = localStorage.getItem("totalclass");
-let savedAttendedJS = localStorage.getItem("attendedclass");
-let savedRemainingJS = localStorage.getItem("remainingclass");
-let savedTargetJS = localStorage.getItem("targetatt");
+let savedTotal = localStorage.getItem("totalclass");
+let savedAttended = localStorage.getItem("attendedclass");
+let savedRemaining = localStorage.getItem("remainingclass");
+let savedTarget = localStorage.getItem("targetatt");
 
-if (savedTotalJS != null) {
-    document.getElementById("totalclassHTML").value = savedTotalJS;
+if (savedTotal != null) {
+    document.getElementById("totalclassHTML").value = savedTotal;
 }
 
-if (savedAttendedJS != null) {
-    document.getElementById("attendedclassHTML").value = savedAttendedJS;
+if (savedAttended != null) {
+    document.getElementById("attendedclassHTML").value = savedAttended;
 }
 
-if (savedRemainingJS != null) {
-    document.getElementById("remainingclassHTML").value = savedRemainingJS;
+if (savedRemaining != null) {
+    document.getElementById("remainingclassHTML").value = savedRemaining;
 }
 
-if (savedTargetJS != null) {
-    document.getElementById("targetattHTML").value = savedTargetJS;
+if (savedTarget != null) {
+    document.getElementById("targetattHTML").value = savedTarget;
 }
 
-calcBtnJS.addEventListener("click", function() {
+calcBtn.addEventListener("click", function() {
 
     let totalclassJS = Number(document.getElementById("totalclassHTML").value);
     let attendedclassJS = Number(document.getElementById("attendedclassHTML").value);
