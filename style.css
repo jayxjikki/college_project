@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    margin:0;
+    padding-top:50px;
+}
+
+.maindiv {
+    max-width:100%;
+    text-align:center;
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+    background-color: #334155;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px #020617;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f8fafc;
+    margin-bottom: 25px;
+}
+
+.inputdiv{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 600;
+    color:#f1f5f9;
+}
+
+input {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    border-radius:50px;
+    padding: 10px 15px;
+    width: 250px;
+    box-sizing: border-box;
+    background-color:#f8fafc;
+    border: 2px solid #64748b;
+    outline: none;
+}
+
+input:focus {
+    border-color: #818cf8;
+}
+
+button {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius:50px;
+    padding: 11px 24px;
+    cursor: pointer;
+    background-color:#6366f1;
+    color:white;
+    border:none;
+}
+
+#resultHTML{
+    font-family: Arial, sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+    color:#0f172a;
+}
+
+button:hover{
+    background-color:#4f46e5;
+    color:white;
+}
+
+@media (max-width: 600px) {
+    .maindiv {
+    padding: 20px;
+    }
+
+    label {
+    width: auto;
+    }
+
+    input {
+    width: 100%;
+    }
+}
