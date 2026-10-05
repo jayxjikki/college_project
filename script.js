@@ -21,7 +21,7 @@ if (savedTarget != null) {
     document.getElementById("targetattHTML").value = savedTarget;
 }
 
-calcBtn.addEventListener("click", function() {
+calcBtn.addEventListener("click", function () {
 
     let totalclassJS = Number(document.getElementById("totalclassHTML").value);
     let attendedclassJS = Number(document.getElementById("attendedclassHTML").value);
@@ -36,22 +36,22 @@ calcBtn.addEventListener("click", function() {
     localStorage.setItem("targetatt", targetattJS);
 
     if (totalclassJS <= 0) {
-        resultJS.innerHTML = "Total classes invalid hai!";
+        resultJS.innerHTML = "Total classes invalid";
         return;
     }
 
     if (attendedclassJS < 0 || attendedclassJS > totalclassJS) {
-        resultJS.innerHTML = "Attended classes invalid hain!";
+        resultJS.innerHTML = "Attended classes invalid";
         return;
     }
 
     if (remainingclassJS < 0) {
-        resultJS.innerHTML = "Remaining classes invalid hain!";
+        resultJS.innerHTML = "Remaining classes invalid ";
         return;
     }
 
     if (targetattJS <= 0 || targetattJS > 100) {
-        resultJS.innerHTML = "Target attendance 1 se 100 ke beech honi chahiye!";
+        resultJS.innerHTML = "Target attendance should be between 1 to 100.";
         return;
     }
 
